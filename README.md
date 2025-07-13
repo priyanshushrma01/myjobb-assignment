@@ -40,8 +40,8 @@ myjobb-dashboard/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/myjobb-dashboard.git
-cd myjobb-dashboard
+git clone https://github.com/priyanshushrma01/myjobb-assignment.git
+cd myjobb-assignment
 ```
 
 ### 2. Backend Setup
