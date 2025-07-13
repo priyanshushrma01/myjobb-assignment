@@ -13,7 +13,7 @@ export default function AuthPage() {
 
   const sendOtp = async () => {
     try {
-      await axios.post('http://localhost:5000/api/auth/send-otp', { email })
+      await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/send-otp`, { email })
       setStep(2)
       setError('')
     } catch {
@@ -23,7 +23,7 @@ export default function AuthPage() {
 
   const verifyOtp = async () => {
   try {
-    const res = await axios.post('http://localhost:5000/api/auth/verify-otp', { email, otp });
+    const res = await axios.post(`${process.env.NEXT_PUBLIC_BASE_URL}/api/auth/verify-otp`, { email, otp });
     setToken(res.data.token);
     localStorage.setItem("token", res.data.token);
     setError('');
