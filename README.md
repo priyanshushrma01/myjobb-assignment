@@ -80,15 +80,6 @@ npm run dev
 ```
 Frontend will run at `http://localhost:3000`.
 
-## 📝 Usage
-1. Go to `/auth` and enter your email to receive an OTP.
-2. Check your inbox (Mailtrap or Gmail) for the OTP.
-3. Enter the OTP to log in. A confirmation email will be sent on success.
-4. Explore the dashboard:
-   - **Products Tab:** View all products in a sortable table.
-   - **Analytics Tab:** Explore charts based on product data.
-   - **Sidebar:** Navigate between dashboard sections.
-
 
 
 ## 🔒 Security & Best Practices
