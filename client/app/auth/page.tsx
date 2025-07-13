@@ -13,7 +13,7 @@ export default function AuthPage() {
 
   const sendOtp = async () => {
     try {
-      await axios.post('https://myjobb-assignment-3h8q.vercel.app/api/auth/send-otp', { email })
+      await axios.post('https://myjobb-backend.onrender.com/api/auth/send-otp', { email })
       setStep(2)
       setError('')
     } catch {
@@ -23,7 +23,7 @@ export default function AuthPage() {
 
   const verifyOtp = async () => {
   try {
-    const res = await axios.post('https://myjobb-assignment-3h8q.vercel.app/api/auth/verify-otp', { email, otp });
+    const res = await axios.post('https://myjobb-backend.onrender.com/api/auth/verify-otp', { email, otp });
     setToken(res.data.token);
     localStorage.setItem("token", res.data.token);
     setError('');
